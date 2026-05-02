@@ -25,7 +25,7 @@ function main() {
     console.error("错误: 未找到 Python 或 neko-cli 包未安装。");
     console.error("");
     console.error("请先运行以下命令安装 Python 包：");
-    console.error("  pip install neko-cli");
+    console.error("  pip install xiaohondan-nekocli");
     console.error("");
     console.error("Python 下载：https://www.python.org/downloads/");
     process.exit(1);
