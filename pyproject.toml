@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neko-cli"
+version = "1.0.0"
+description = "Neko CLI - 通用包管理命令行工具"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [
+    {name = "小红蛋", email = "3815099625@qq.com"}
+]
+keywords = ["cli", "package-manager", "neko"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+neko = "neko_cli.main:main"
+
+[tool.setuptools.packages.find]
+include = ["neko_cli*"]
