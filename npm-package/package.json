@@ -1,0 +1,22 @@
+{
+  "name": "neko-cli",
+  "version": "1.0.0",
+  "description": "Neko CLI - Universal package manager (npm wrapper, requires Python 3.9+)",
+  "keywords": ["cli", "package-manager", "neko", "pip", "npm"],
+  "homepage": "https://github.com/NekoAiDev/neko-cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NekoAiDev/neko-cli.git"
+  },
+  "bin": {
+    "neko": "./bin/neko.js"
+  },
+  "scripts": {
+    "postinstall": "node bin/postinstall.js"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "preferGlobal": true,
+  "os": ["darwin", "linux", "win32"]
+}
