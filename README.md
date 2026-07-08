@@ -11,7 +11,7 @@ pip install xiaohondan-nekocli
 ## 使用
 
 ```bash
-# 初始化项目
+# 初始化项目(只需要在第一次部署时执行，后续启动不需要执行)
 neko init
 
 # 安装包
