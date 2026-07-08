@@ -27,8 +27,8 @@ def main():
     p_install = subparsers.add_parser("install", aliases=["i"], help="安装包")
     p_install.add_argument("package", help="包名或路径")
     p_install.add_argument("--from", dest="source", default=None,
-                           choices=["pypi", "npm", "repo", "local"],
-                           help="包源：pypi / npm / repo / local")
+                           choices=["pypi", "npm", "uv", "repo", "local"],
+                           help="包源：pypi / npm / uv / repo / local")
     p_install.add_argument("--repo-url", default=None, help="自定义仓库地址（--from repo 时使用）")
     p_install.add_argument("-g", "--global", dest="is_global", action="store_true",
                            help="全局安装")
@@ -52,7 +52,7 @@ def main():
     p_search = subparsers.add_parser("search", aliases=["s"], help="搜索包")
     p_search.add_argument("keyword", help="搜索关键词")
     p_search.add_argument("--from", dest="source", default="pypi",
-                           choices=["pypi", "npm"],
+                           choices=["pypi", "npm", "uv"],
                            help="搜索源（默认 pypi）")
     p_search.set_defaults(func=search.run)
 
