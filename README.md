@@ -5,7 +5,7 @@
 ## 安装
 
 ```bash
-pip install .
+pip install xiaohondan-nekocli
 ```
 
 ## 使用
